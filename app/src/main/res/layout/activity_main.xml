@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.section2.MainActivity">
+
+    <EditText android:layout_width="match_parent"
+              android:id="@+id/full_name"
+              android:inputType="textPersonName"
+              android:autofillHints="name"
+              android:hint="Full name"
+              android:layout_height="wrap_content"/>
+
+    <EditText android:layout_width="match_parent"
+              android:id="@+id/email"
+              android:inputType="textEmailAddress"
+              android:autofillHints="emailAddress"
+              android:hint="Email"
+              android:layout_height="wrap_content"/>
+
+
+    <RadioGroup android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+                     android:text="Male"
+                     android:id="@+id/male_selection"
+                     android:checked="true"
+                     android:layout_height="wrap_content"/>
+        <RadioButton android:layout_width="wrap_content"
+                     android:text="Female"
+                     android:id="@+id/female_selection"
+                     android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <EditText android:layout_width="match_parent"
+              android:id="@+id/password"
+              android:inputType="textPassword"
+              android:autofillHints="password"
+              android:hint="Password"
+              android:layout_height="wrap_content"/>
+
+    <EditText android:layout_width="match_parent"
+              android:id="@+id/confirm_password"
+              android:inputType="textPassword"
+              android:autofillHints="password"
+              android:hint="Confirm Password"
+              android:layout_height="wrap_content"/>
+
+    <EditText android:layout_width="match_parent"
+              android:id="@+id/phone_number"
+              android:inputType="phone"
+              android:autofillHints="phone"
+              android:hint="Phone Number"
+              android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button"
+            android:id="@+id/submit_button"
+    />
+
+
+</LinearLayout>
